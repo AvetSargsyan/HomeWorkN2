@@ -2,7 +2,7 @@
 
 let str = "text";
 let bool = true;
-let num = 9;
+let num = 3;
 
 //1.Perform addition of various types (string + boolean, string + number, number + boolean)
 console.group("Addition");
@@ -27,10 +27,10 @@ console.groupEnd();
 
 //4.Perform explicit conversion (number, string, boolean)
 console.group("Explicit conversion");
-str = bool ;
-console.log(str);
-str = num ;
-console.log(str);
-num = bool;
-console.log(num);
+console.log(String(num));
+console.log(String(bool));
+console.log(Number(str));
+console.log(Number(bool));
+console.log(Boolean(num));
+console.log(Boolean(str));
 console.groupEnd();
